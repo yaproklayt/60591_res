@@ -1,4 +1,4 @@
-<<section class="banner">
+<section class="banner">
     <p>Маркетологи объявили <?= $today ?> года<br>самым удачным временем для покупок!</p>
 </section>
 <section class="catalog">

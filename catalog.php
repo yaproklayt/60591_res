@@ -1,7 +1,8 @@
 <?php
-require('products_db.php');
+//require('products_db.php');
+require('auth.php');
 require('dbconnect.php');
-$limit = 4;
+$limit = 6;
 $page = intval($_GET['page']) ?: 1;
 $offset = ($page - 1) * $limit;
 //Запрос для получения количества записей в таблице
@@ -24,5 +25,5 @@ $today = $day . $months[$month] . $year;
 
 require('components/header.php');
 require('components/products_list.php');
-
+require ('components/message.php');
 require('components/footer.php');

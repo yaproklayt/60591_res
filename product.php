@@ -1,6 +1,7 @@
-<<?php
+<?php
 //require('products_db.php');
 require('dbconnect.php');
+require('auth.php');
 require('components/header.php');
 
 $id = $_GET['product_id'];
@@ -15,7 +16,5 @@ if ($is_violet_tuesday) {
 }
 
 require('components/product_info.php');
+require ('components/message.php');
 require('components/footer.php');
-
-
-
